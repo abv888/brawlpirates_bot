@@ -9,15 +9,15 @@ async def generate_signal() -> (str, str):
     time = datetime.now().strftime("%d.%m.%Y %H:%M")
     signal_string = ""
     if img == 'resources/signals/left.JPG':
-        signal_string = 'Выпал: Левый череп'
+        signal_string = 'Caiu: Crânio Esquerdo'
     if img == 'resources/signals/mid.JPG':
-        signal_string = "Выпал: Череп по середине"
+        signal_string = "Caiu: Caveira no meioе"
     elif img == 'resources/signals/right.JPG':
-        signal_string = "Выпал: Правый череп"
-    result_string = (f"💀 Игра №{game}\n"
+        signal_string = "Caiu: Crânio Direito"
+    result_string = (f"💀 Um jogo №{game}\n"
                      f"🕓 {time}\n"
                      f"{signal_string}\n\n"
-                     f"Шанс - {percent}%\n\n")
+                     f"Chance - {percent}%\n\n")
 
     return result_string, img
 
